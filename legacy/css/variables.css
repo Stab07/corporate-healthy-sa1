@@ -1,0 +1,97 @@
+:root {
+  /* Brand palette */
+  --color-primary: #147d74;
+  --color-primary-dark: #0b2f3a;
+  --color-primary-light: #8ed8cf;
+  --color-primary-bg: #e8f5f1;
+  --color-secondary: #2ea8d2;
+  --color-accent: #c48a4a;
+  --color-dark: #102a32;
+  --color-grey-700: #243f46;
+  --color-grey-500: #5f7378;
+  --color-grey-300: #c9d7d8;
+  --color-grey-200: #dce8e7;
+  --color-grey-100: #edf4f2;
+  --color-grey-50: #f7faf8;
+  --color-white: #ffffff;
+  --color-cream: #fbf7ee;
+  --color-c1: #25d366;
+  --color-error: #a7382b;
+  --color-success: #147d4d;
+
+  /* Typography */
+  --font-display: "Outfit", sans-serif;
+  --font-primary: "Plus Jakarta Sans", sans-serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.5rem;
+  --font-size-5xl: 3.5rem;
+  --font-size-6xl: 4.75rem;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --line-height-tight: 1.04;
+  --line-height-snug: 1.2;
+  --line-height-normal: 1.6;
+  --line-height-relaxed: 1.78;
+
+  /* Spacing scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 32px;
+  --space-8: 40px;
+  --space-9: 48px;
+  --space-10: 64px;
+  --space-11: 80px;
+  --space-12: 96px;
+  --space-13: 112px;
+  --space-14: 128px;
+  --space-15: 160px;
+  --space-16: 192px;
+  --space-17: 224px;
+  --space-18: 256px;
+  --space-19: 320px;
+  --space-20: 384px;
+
+  /* Layout */
+  --container-max: 1240px;
+  --container-padding: 1.5rem;
+  --border-radius-sm: 8px;
+  --border-radius-md: 14px;
+  --border-radius-lg: 22px;
+  --border-radius-xl: 32px;
+  --border-radius-2xl: 40px;
+  --border-radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 10px 30px rgba(16, 42, 50, 0.08);
+  --shadow-md: 0 18px 50px rgba(16, 42, 50, 0.12);
+  --shadow-lg: 0 28px 80px rgba(16, 42, 50, 0.16);
+  --shadow-blue: 0 18px 45px rgba(20, 125, 116, 0.22);
+  --shadow-soft: 0 24px 70px rgba(46, 168, 210, 0.15);
+
+  /* Motion */
+  --ease-standard: cubic-bezier(0.32, 0.72, 0, 1);
+  --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
+  --transition-fast: 160ms var(--ease-standard);
+  --transition-base: 260ms var(--ease-standard);
+  --transition-slow: 520ms var(--ease-soft);
+  --transition-page: 560ms cubic-bezier(0.76, 0, 0.24, 1);
+
+  /* Form fields */
+  --form-bg: var(--color-white);
+  --form-text: var(--color-dark);
+  --form-border: var(--color-grey-200);
+  --form-border-focus: var(--color-primary);
+  --form-placeholder: #819397;
+}

@@ -1,0 +1,42 @@
+html,
+body {
+  width: 100%;
+}
+
+body {
+  background:
+    linear-gradient(180deg, rgba(247, 250, 248, 0.98), rgba(251, 247, 238, 0.44)),
+    var(--color-grey-50);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  pointer-events: none;
+  opacity: 0.035;
+  background-image:
+    repeating-linear-gradient(0deg, rgba(16, 42, 50, 0.75) 0 1px, transparent 1px 5px),
+    repeating-linear-gradient(90deg, rgba(16, 42, 50, 0.45) 0 1px, transparent 1px 7px);
+  mix-blend-mode: multiply;
+}
+
+main {
+  overflow: clip;
+}
+
+section,
+footer {
+  position: relative;
+}
+
+.container {
+  width: min(calc(100% - (var(--container-padding) * 2)), var(--container-max));
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+
+.section {
+  padding: var(--space-14) 0;
+}

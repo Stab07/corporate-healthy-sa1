@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Name | Corporate Healthy SA</title>
+  <meta name="description" content="Service page description for Corporate Healthy SA.">
+  <link rel="icon" href="../healthy 1 Logo.jpg.jpeg">
+  <meta name="theme-color" content="#0b2f3a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/typography.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+  <div class="page-transition" aria-hidden="true"></div>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="navbar navbar--solid scrolled" aria-label="Primary navigation">
+      <div class="container navbar__inner">
+        <a class="navbar__logo" href="../index.html#hero" aria-label="Go to Corporate Healthy SA home">
+          Corporate Healthy SA
+        </a>
+
+        <div class="navbar__desktop">
+          <ul class="desktop-nav">
+            <li class="desktop-nav__item">
+              <a class="nav-link" href="../index.html#hero" aria-label="Go to home section">Home</a>
+            </li>
+            <li class="desktop-nav__item has-dropdown">
+              <button class="nav-link nav-link--button" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Open About Us menu">
+                About Us
+                <span class="nav-caret" aria-hidden="true"></span>
+              </button>
+              <div class="dropdown-menu" aria-label="About Us submenu">
+                <a class="dropdown-link" href="../pages/why-us.html" aria-label="Read Why Us page">Why Us</a>
+                <a class="dropdown-link" href="../pages/about.html" aria-label="Read About Us page">About Us</a>
+                <a class="dropdown-link" href="../pages/sentiments.html" aria-label="Read Our Sentiments page">Our Sentiments</a>
+                <a class="dropdown-link" href="../pages/employment.html" aria-label="Read Employment page">Employment</a>
+              </div>
+            </li>
+            <li class="desktop-nav__item has-dropdown">
+              <button class="nav-link nav-link--button active" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Open Services menu">
+                Services
+                <span class="nav-caret" aria-hidden="true"></span>
+              </button>
+              <div class="dropdown-menu" aria-label="Services submenu">
+                <a class="dropdown-link" href="massages.html" aria-label="Read about massage services">Massages</a>
+                <a class="dropdown-link" href="dieticians.html" aria-label="Read about dietician services">Dieticians</a>
+                <a class="dropdown-link" href="orthotist.html" aria-label="Read about orthotist services">Orthotist / Prosthetist</a>
+                <a class="dropdown-link" href="audiologist.html" aria-label="Read about audiologist services">Audiologist</a>
+                <a class="dropdown-link" href="nurses.html" aria-label="Read about nursing services">Occupational Nurses</a>
+                <a class="dropdown-link" href="physio.html" aria-label="Read about physiotherapy services">Physiotherapists</a>
+                <a class="dropdown-link" href="psychologist.html" aria-label="Read about psychologist services">Psychologist</a>
+                <a class="dropdown-link" href="biokineticist.html" aria-label="Read about biokineticist services">Biokineticist</a>
+              </div>
+            </li>
+            <li class="desktop-nav__item">
+              <a class="nav-link" href="../pages/contact.html" aria-label="Go to contact page">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <button class="navbar__toggle" type="button" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Toggle mobile navigation">
+          <span class="navbar__toggle-line"></span>
+          <span class="navbar__toggle-line"></span>
+          <span class="navbar__toggle-line"></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="navbar__overlay" aria-hidden="true"></div>
+
+    <aside class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+      <div class="mobile-drawer__header">
+        <a class="mobile-drawer__logo" href="../index.html#hero" aria-label="Go to Corporate Healthy SA home">Corporate Healthy SA</a>
+      </div>
+
+      <div class="mobile-drawer__body">
+        <a class="mobile-nav__link" href="../index.html#hero" aria-label="Go to home section">Home</a>
+
+        <div class="mobile-nav__item mobile-nav__item--accordion">
+          <button class="mobile-nav__toggle" type="button" aria-expanded="false" aria-controls="mobile-about-menu" aria-label="Toggle About Us mobile menu">
+            <span>About Us</span>
+            <span class="mobile-nav__caret" aria-hidden="true"></span>
+          </button>
+          <div class="mobile-nav__submenu" id="mobile-about-menu">
+            <div class="mobile-nav__submenu-inner">
+              <a class="mobile-nav__sublink" href="../pages/why-us.html" aria-label="Read Why Us page">Why Us</a>
+              <a class="mobile-nav__sublink" href="../pages/about.html" aria-label="Read About Us page">About Us</a>
+              <a class="mobile-nav__sublink" href="../pages/sentiments.html" aria-label="Read Our Sentiments page">Our Sentiments</a>
+              <a class="mobile-nav__sublink" href="../pages/employment.html" aria-label="Read Employment page">Employment</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mobile-nav__item mobile-nav__item--accordion open">
+          <button class="mobile-nav__toggle" type="button" aria-expanded="true" aria-controls="mobile-services-menu" aria-label="Toggle Services mobile menu">
+            <span>Services</span>
+            <span class="mobile-nav__caret" aria-hidden="true"></span>
+          </button>
+          <div class="mobile-nav__submenu" id="mobile-services-menu">
+            <div class="mobile-nav__submenu-inner">
+              <a class="mobile-nav__sublink" href="massages.html" aria-label="Read about massage services">Massages</a>
+              <a class="mobile-nav__sublink" href="dieticians.html" aria-label="Read about dietician services">Dieticians</a>
+              <a class="mobile-nav__sublink" href="orthotist.html" aria-label="Read about orthotist services">Orthotist / Prosthetist</a>
+              <a class="mobile-nav__sublink" href="audiologist.html" aria-label="Read about audiologist services">Audiologist</a>
+              <a class="mobile-nav__sublink" href="nurses.html" aria-label="Read about nursing services">Occupational Nurses</a>
+              <a class="mobile-nav__sublink" href="physio.html" aria-label="Read about physiotherapy services">Physiotherapists</a>
+              <a class="mobile-nav__sublink" href="psychologist.html" aria-label="Read about psychologist services">Psychologist</a>
+              <a class="mobile-nav__sublink" href="biokineticist.html" aria-label="Read about biokineticist services">Biokineticist</a>
+            </div>
+          </div>
+        </div>
+
+        <a class="mobile-nav__link" href="../pages/contact.html" aria-label="Go to contact page">Contact</a>
+      </div>
+    </aside>
+  </header>
+
+  <section class="page-hero">
+    <div class="container page-hero__inner">
+      <nav class="breadcrumb" aria-label="Breadcrumb" data-animate="page-breadcrumb">
+        <a href="../index.html#hero">Home</a>
+        <span aria-hidden="true">/</span>
+        <span>Services</span>
+        <span aria-hidden="true">/</span>
+        <span aria-current="page">[Service Name]</span>
+      </nav>
+      <h1 data-animate="page-title">[Service Name]</h1>
+    </div>
+  </section>
+
+  <main class="page-content page-content--flush" id="content">
+    <!-- Service-specific content goes here -->
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="site-footer__column site-footer__column--brand">
+          <a class="site-footer__logo" href="../index.html#hero" aria-label="Go to Corporate Healthy SA home">Corporate Healthy SA</a>
+          <p class="site-footer__tagline">Corporate Wellness Partner</p>
+          <p class="site-footer__summary">Leading in corporate health and wellness across South Africa.</p>
+        </div>
+
+        <div class="site-footer__column">
+          <p class="site-footer__heading">Quick Links</p>
+          <ul class="site-footer__list">
+            <li><a href="../index.html#hero" aria-label="Go to home section">Home</a></li>
+            <li><a href="../pages/about.html" aria-label="Read About Us page">About Us</a></li>
+            <li><a href="../pages/why-us.html" aria-label="Read Why Us page">Why Us</a></li>
+            <li><a href="../pages/sentiments.html" aria-label="Read Our Sentiments page">Our Sentiments</a></li>
+            <li><a href="../pages/employment.html" aria-label="Read Employment page">Employment</a></li>
+            <li><a href="../pages/contact.html" aria-label="Go to contact page">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__column">
+          <p class="site-footer__heading">Services</p>
+          <ul class="site-footer__list">
+            <li><a href="massages.html" aria-label="Read about massage services">Massages</a></li>
+            <li><a href="dieticians.html" aria-label="Read about dietician services">Dieticians</a></li>
+            <li><a href="orthotist.html" aria-label="Read about orthotist services">Orthotist / Prosthetist</a></li>
+            <li><a href="audiologist.html" aria-label="Read about audiologist services">Audiologist</a></li>
+            <li><a href="nurses.html" aria-label="Read about nursing services">Occupational Nurses</a></li>
+            <li><a href="physio.html" aria-label="Read about physiotherapy services">Physiotherapists</a></li>
+            <li><a href="psychologist.html" aria-label="Read about psychologist services">Psychologist</a></li>
+            <li><a href="biokineticist.html" aria-label="Read about biokineticist services">Biokineticist</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <p>&copy; 2026 Corporate Healthy SA. All rights reserved.</p>
+        <a href="https://wa.me/27794620820" target="_blank" rel="noreferrer" aria-label="Chat with Corporate Healthy SA on WhatsApp">WhatsApp Us</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../js/nav.js" defer></script>
+  <script src="../js/animations.js" defer></script>
+  <script src="../js/transitions.js" defer></script>
+  <script src="../js/main.js" defer></script>
+</body>
+</html>
+
+

@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary: #1B5E8C;
+  --color-primary-dark: #0F3D5C;
+  --color-primary-light: #2E79AE;
+  --color-accent: #F2A65A;
+  --color-accent-light: #FEF1E3;
+  --color-background: #F7FAFC;
+  --color-surface: #FFFFFF;
+  --color-text-primary: #16202B;
+  --color-text-muted: #5B6B7B;
+  --color-success: #2D9D6F;
+  --color-whatsapp: #25D366;
+  --color-whatsapp-dark: #1DA851;
+  --font-sans: var(--font-geist-sans);
+  --font-serif: var(--font-instrument-serif);
+  --font-display: var(--font-plus-jakarta);
+  --breakpoint-xs: 375px;
+  --breakpoint-3xl: 1920px;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Fluid display + body type. Scales continuously between the given min/max
+   sizes so headings never overflow narrow screens nor feel undersized on
+   wide monitors (tested 320px -> 2560px). */
+@utility fluid-h1 {
+  font-size: clamp(2rem, 3vw + 0.5rem, 3.75rem);
+  line-height: 1.1;
+}
+
+@utility fluid-h2 {
+  font-size: clamp(1.75rem, 3vw + 1rem, 3rem);
+  line-height: 1.15;
+}
+
+@utility fluid-body-lg {
+  font-size: clamp(1rem, 1vw + 0.75rem, 1.25rem);
+  line-height: 1.6;
+}
+
+:root {
+  --background: #F7FAFC;
+  --foreground: #16202B;
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+/* Accessible focus indicator for keyboard users (WCAG 2.4.7 / 1.4.11).
+   Dark outline + white halo so it reads on both light and dark surfaces. */
+:focus-visible {
+  outline: 2px solid var(--color-text-primary);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.85);
+}
+
+::selection {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(242, 166, 90, 0.3); }
+  50% { box-shadow: 0 0 24px 6px rgba(242, 166, 90, 0.15); }
+}
+
+.bg-animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 8s ease infinite;
+}
+
+.hover-glow:hover {
+  animation: glow-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes line-draw {
+  0% { transform: scaleX(0); }
+  100% { transform: scaleX(1); }
+}
+
+.animate-line-draw {
+  transform-origin: left;
+  animation: line-draw 0.8s ease-out forwards;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
