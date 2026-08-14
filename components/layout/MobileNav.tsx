@@ -247,11 +247,18 @@ export function MobileNav({ open, onClose }: MobileNavProps) {
 
             <div className="space-y-3 border-t border-zinc-100 px-5 py-5 text-sm">
               <a
-                href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}
+                href={`tel:${siteConfig.phoneDirectLink}`}
                 className="flex items-center gap-2.5 text-text-muted transition-colors hover:text-primary"
               >
                 <Phone className="h-4 w-4 text-primary" />
-                {siteConfig.phone}
+                Tel: {siteConfig.phoneDirect}
+              </a>
+              <a
+                href={`tel:${siteConfig.phoneLink}`}
+                className="flex items-center gap-2.5 text-text-muted transition-colors hover:text-primary"
+              >
+                <Phone className="h-4 w-4 text-primary" />
+                Mobile: {siteConfig.phone}
               </a>
               <a
                 href={`mailto:${siteConfig.email}`}

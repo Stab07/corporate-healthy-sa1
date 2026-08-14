@@ -306,9 +306,21 @@ export function ContactForm() {
                 <div className="flex items-start gap-3">
                   <PiPhone size={18} className="text-primary shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-base font-medium text-text-primary">Phone</p>
+                    <p className="text-base font-medium text-text-primary">Tel</p>
                     <a
-                      href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}
+                      href={`tel:${siteConfig.phoneDirectLink}`}
+                      className="text-base text-text-muted transition-colors duration-200 hover:text-primary"
+                    >
+                      {siteConfig.phoneDirect}
+                    </a>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <PiPhone size={18} className="text-primary shrink-0 mt-0.5" />
+                  <div>
+                    <p className="text-base font-medium text-text-primary">Mobile</p>
+                    <a
+                      href={`tel:${siteConfig.phoneLink}`}
                       className="text-base text-text-muted transition-colors duration-200 hover:text-primary"
                     >
                       {siteConfig.phone}

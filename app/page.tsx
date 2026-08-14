@@ -22,7 +22,7 @@ const organizationJsonLd = {
     "Leading corporate health and wellness partner in South Africa since 2007. Customised wellness programmes, health screening, and on-site occupational health services delivered by HPCSA-registered practitioners.",
   url: baseUrl,
   logo: `${baseUrl}/logo.png`,
-  telephone: siteConfig.phone.replace(/\s/g, ""),
+  telephone: siteConfig.phoneLink,
   email: siteConfig.email,
   foundingDate: "2007",
   address: {

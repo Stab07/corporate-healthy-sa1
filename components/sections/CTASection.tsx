@@ -61,7 +61,7 @@ export function CTASection({
             Request a Proposal
           </Button>
           <Button
-            href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}
+            href={`tel:${siteConfig.phoneLink}`}
             variant="light"
             size="lg"
             showArrow={false}

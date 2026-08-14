@@ -106,8 +106,19 @@ export function Footer() {
               <ul className="mt-5 space-y-3.5 text-sm text-white/80">
                 <li className="flex items-start gap-2.5">
                   <PiPhone size={16} className="mt-0.5 shrink-0 text-accent" />
+                  <span className="sr-only">Tel</span>
                   <a
-                    href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}
+                    href={`tel:${siteConfig.phoneDirectLink}`}
+                    className="transition-colors hover:text-accent"
+                  >
+                    {siteConfig.phoneDirect}
+                  </a>
+                </li>
+                <li className="flex items-start gap-2.5">
+                  <PiPhone size={16} className="mt-0.5 shrink-0 text-accent" />
+                  <span className="sr-only">Mobile</span>
+                  <a
+                    href={`tel:${siteConfig.phoneLink}`}
                     className="transition-colors hover:text-accent"
                   >
                     {siteConfig.phone}
