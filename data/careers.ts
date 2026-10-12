@@ -14,7 +14,7 @@ export const jobOpenings: JobOpening[] = [
   {
     title: "Occupational Health Nurse",
     type: "Full-time",
-    location: "Midrand, Gauteng",
+    location: "Vorna Valley, Midrand",
     slug: "occupational-health-nurse",
     summary:
       "Deliver on-site health risk assessments, VCT, and medical surveillance at corporate client sites across Gauteng.",
@@ -22,7 +22,7 @@ export const jobOpenings: JobOpening[] = [
   {
     title: "Corporate Wellness Specialist",
     type: "Full-time",
-    location: "Midrand, Gauteng",
+    location: "Vorna Valley, Midrand",
     slug: "corporate-wellness-specialist",
     summary:
       "Design and coordinate corporate wellness days, health screening events, and engagement programmes for our client teams.",

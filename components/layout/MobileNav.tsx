@@ -254,13 +254,6 @@ export function MobileNav({ open, onClose }: MobileNavProps) {
                 Tel: {siteConfig.phoneDirect}
               </a>
               <a
-                href={`tel:${siteConfig.phoneLink}`}
-                className="flex items-center gap-2.5 text-text-muted transition-colors hover:text-primary"
-              >
-                <Phone className="h-4 w-4 text-primary" />
-                Mobile: {siteConfig.phone}
-              </a>
-              <a
                 href={`mailto:${siteConfig.email}`}
                 className="flex items-center gap-2.5 text-text-muted transition-colors hover:text-primary"
               >

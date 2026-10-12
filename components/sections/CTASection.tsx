@@ -61,13 +61,13 @@ export function CTASection({
             Request a Proposal
           </Button>
           <Button
-            href={`tel:${siteConfig.phoneLink}`}
+            href={`tel:${siteConfig.phoneDirectLink}`}
             variant="light"
             size="lg"
             showArrow={false}
           >
             <Phone className="h-4 w-4" />
-            {siteConfig.phone}
+            {siteConfig.phoneDirect}
           </Button>
         </motion.div>
         <motion.p

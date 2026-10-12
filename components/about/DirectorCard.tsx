@@ -39,7 +39,7 @@ export function DirectorCard() {
                       Email
                     </a>
                     <a
-                      href={`tel:${siteConfig.phoneLink}`}
+                      href={`tel:${siteConfig.phoneDirectLink}`}
                       className={`${contactLinkBase} bg-accent text-primary-dark hover:brightness-[0.96]`}
                     >
                       <Phone className="h-4 w-4" strokeWidth={2.2} />

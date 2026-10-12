@@ -115,16 +115,6 @@ export function Footer() {
                   </a>
                 </li>
                 <li className="flex items-start gap-2.5">
-                  <PiPhone size={16} className="mt-0.5 shrink-0 text-accent" />
-                  <span className="sr-only">Mobile</span>
-                  <a
-                    href={`tel:${siteConfig.phoneLink}`}
-                    className="transition-colors hover:text-accent"
-                  >
-                    {siteConfig.phone}
-                  </a>
-                </li>
-                <li className="flex items-start gap-2.5">
                   <PiEnvelopeSimple
                     size={16}
                     className="mt-0.5 shrink-0 text-accent"
