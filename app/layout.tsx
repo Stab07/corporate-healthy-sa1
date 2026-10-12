@@ -64,11 +64,6 @@ export const metadata: Metadata = {
     // PLACEHOLDER OG IMAGE: same replacement applies here.
     images: ["/logo.png"],
   },
-  icons: {
-    icon: "/favicon.png?v=3",
-    shortcut: "/favicon.png?v=3",
-    apple: "/favicon.png?v=3",
-  },
 };
 
 export default function RootLayout({
